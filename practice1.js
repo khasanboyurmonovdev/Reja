@@ -1,0 +1,1 @@
+console.log("Practicing amend function on git terminal!")
