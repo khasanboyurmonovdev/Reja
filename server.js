@@ -20,6 +20,7 @@ app.set("view engine","ejs"); // views folderni ichidan oqiydi degani
 // app.get("/gift", function(req,res){res.end(`<h1 style="background: blue" >Siz sovgalari bolimidasiz</h1>`);});
 app.post("/create-item", (req, res)=>{console.log(req.body); res.json({test: "success"});});
 app.get("/", function(req, res ){ res.render("harid");});
+app.get("/home", function(req, res ){ res.render("home");});
 const server = http.createServer(app); //serverni qurib olamiz
 let PORT = 3000;
 server.listen(PORT, function(req, res){
