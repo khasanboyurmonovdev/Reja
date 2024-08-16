@@ -1,0 +1,20 @@
+{
+"name": " Khasanboy Urmonov (Henry)",
+"profession": "Software engineer",
+"age": 26,
+"residence":"S.Korea",
+"address": "S.Korea , Gwangju",
+"languages": ["Uzbek","Korean", "English"],
+"skilss": [ "HTML", "CSS", "Javascript", "NodeJS"],
+"extra_skills": [ "Bootstrap Materialize","Styling, Sass", "Django Flask ", "GIT knowledge"],
+"work_place": "IT company",
+"service_desc": "Amet minim mollit non deserunt ullamco est  sit aliqua dolor do amet sint. Velit officia cosequat",
+"about_me": "lorem ipsim ahasksjkaso",
+"city": "Andijan",
+"title": [ "Flower", "Seedings", "Gardener"],
+"flower_desc": ["what is a flower", "what is a seeding", "what is a gardener"],
+"flower_name": ["Tulip", "Dafodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "blossom" ],
+"flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
+"famous_words": ["World is beautiful with flowers"],
+"famous_name":["Steve Jobs"]
+}
