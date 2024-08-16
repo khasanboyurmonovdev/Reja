@@ -11,7 +11,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
     }
 });
 //1 bosqich expressga kirib kelayotgan malumotlarga bogliq bolgan kodlar yoziladi:KIRISH KODLARI
-app.use(express.static("public")); //bu har qanday browserdan kirib kelyapkan zaproslar uchun public folderi ochiq degan manoni anglatadi.yani faqat public folderni kora oladi degani
+app.use(express.static("public F")); //bu har qanday browserdan kirib kelyapkan zaproslar uchun public folderi ochiq degan manoni anglatadi.yani faqat public folderni kora oladi degani
 app.use(express.json()); // bu operatsiyamiz kirib kelyapkan json formatdagi datani object xolatida bizga ogirib beradi
 app.use(express.urlencoded({extended: true})); // bu operatsiyamiz bolmasa html formdegi post qilingan narsalarni express serverimiz qabul qilmaydi
 
