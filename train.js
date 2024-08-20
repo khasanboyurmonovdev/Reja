@@ -1,3 +1,4 @@
+/*
 console.log("Jack Ma maslahatlari");
 const list = [
   "yaxshi talaba boling", //0-20
@@ -30,6 +31,7 @@ maslahatBering(70, (err, data) => {
   }
 });
 console.log("passed here 1");
+*/
 
 /*
 async function maslahatBering(a) {
@@ -97,3 +99,40 @@ async function run() {
 }
   */
 // run();
+// A-Task
+//Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+//MASALAN countLetter("e", "engineer") 3ni return qiladi.
+//For loop dan foydalanib
+/*
+function countLetter(letter, setLetter) {
+  let count = 0;
+  for (let i = 0; i < setLetter.length; i++) {
+    if (setLetter[i] === letter) {
+      count++;
+    }
+  }
+  return count;
+}
+const result = countLetter("1", "121");
+console.log("result:", result);
+*/
+//FILTER VA SPLITDAN FOYDALANDIK
+/*
+function countLetter(letter, element) {
+  return element.split("").filter((ele) => ele === letter).length;
+}
+console.log(countLetter("e", "engineer"));
+*/
+//foreach orqali yechish
+
+function countLetter(letter, element) {
+  let count = 0;
+  element.split("").forEach((ele) => {
+    if (ele === letter) {
+      count++;
+    }
+  });
+  return count;
+}
+const result = countLetter("e", "engineer");
+console.log("result:", result);
