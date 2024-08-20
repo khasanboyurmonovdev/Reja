@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+    "selftrain": "nodemon selftrain.js",
     "train": "nodemon train.js",
     "practice": "nodemon practice1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,15 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/khasanboyurmonovdev/RejaBB.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/khasanboyurmonovdev/RejaBB/issues"
+  },
+  "homepage": "https://github.com/khasanboyurmonovdev/RejaBB#readme"
 }
