@@ -29,11 +29,29 @@ app.set("view engine", "ejs"); // views folderni ichidan oqiydi degani
 // app.get("/hello", function(req,res){res.end(`<h1 style="background: red" >HELLO WORLD by Khasanboy</h1>`);});
 // app.get("/gift", function(req,res){res.end(`<h1 style="background: blue" >Siz sovgalari bolimidasiz</h1>`);});
 app.post("/create-item", (req, res) => {
-  console.log(req.body);
-  res.json({ test: "success" });
+  console.log("user entered /create-item");
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      res.end("successfully added");
+    }
+  });
 });
 app.get("/", function (req, res) {
-  res.render("reja");
+  console.log("user entered /");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        console.log(err);
+        res.end("something went wrong");
+      } else {
+        res.render("reja", { items: data });
+      }
+    });
 });
 app.get("/home", function (req, res) {
   res.render("home");
