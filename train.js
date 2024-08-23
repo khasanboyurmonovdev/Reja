@@ -1,3 +1,24 @@
+//MIT TASK-B
+/*
+B-TASK: 
+
+Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+*/
+function countDigit(isNumber) {
+  let count = 0;
+
+  for (let i = 0; i < isNumber.length; i++) {
+    if (!isNaN(isNumber[i]) && isNumber[i] !== " ") {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log("RESULT:", countDigit("ad2a54y79wet0sfgb9"));
+
 /*
 console.log("Jack Ma maslahatlari");
 const list = [
@@ -124,7 +145,7 @@ function countLetter(letter, element) {
 console.log(countLetter("e", "engineer"));
 */
 //foreach orqali yechish
-
+/*
 function countLetter(letter, element) {
   let count = 0;
   element.split("").forEach((ele) => {
@@ -136,3 +157,4 @@ function countLetter(letter, element) {
 }
 const result = countLetter("e", "engineer");
 console.log("result:", result);
+*/
