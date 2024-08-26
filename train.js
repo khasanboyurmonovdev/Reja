@@ -1,3 +1,20 @@
+//MIT TASK-C
+/*C-TASK: 
+
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+@MITASK  */
+function haveSameLetters(str1, str2) {
+  const sortString = (str) => str.split("").sort().join("");
+  return sortString(str1) === sortString(str2);
+}
+const result = haveSameLetters("listen", "silent");
+console.log("result:", result);
+console.log("******");
+const result2 = haveSameLetters("hello", "world");
+console.log("result2:", result2);
+
 //MIT TASK-B
 /*
 B-TASK: 
@@ -5,6 +22,7 @@ B-TASK:
 Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 */
+/*
 function countDigit(isNumber) {
   let count = 0;
 
@@ -18,6 +36,7 @@ function countDigit(isNumber) {
 }
 
 console.log("RESULT:", countDigit("ad2a54y79wet0sfgb9"));
+*/
 
 /*
 console.log("Jack Ma maslahatlari");
