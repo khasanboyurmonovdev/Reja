@@ -1,3 +1,34 @@
+/*
+F-TASK: 
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+@MITASK
+*/
+function findDoublers(s) {
+  // Belgilarni saqlash uchun to'plam yaratamiz
+  const seen = new Set();
+
+  // Har bir belgi bo'yicha aylantiramiz
+  for (const char of s) {
+    // Agar belgi allaqachon to'plamda bo'lsa, true qaytaramiz
+    if (seen.has(char)) {
+      return true;
+    }
+    // Belgini to'plamga qo'shamiz
+    seen.add(char);
+  }
+
+  // Agar takrorlangan belgi topilmasa, false qaytaramiz
+  return false;
+}
+
+// Misol uchun foydalanish
+console.log(findDoublers("hello")); // true qaytaradi
+console.log(findDoublers("abcde")); // false qaytaradi
+console.log(findDoublers("aabbcc")); // true qaytaradi
+
 /*E-TASK: 
 
 Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
@@ -5,7 +36,7 @@ MASALAN: getReverse("hello") return qilsin "olleh"
 
 @MITASK
 */
-
+/*
 function getReverse(str) {
   let reversed = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -16,7 +47,7 @@ function getReverse(str) {
 
 // Misol
 console.log(getReverse("magistr"));
-
+*/
 /*
 D-TASK: 
 
