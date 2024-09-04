@@ -1,3 +1,23 @@
+/*G-TASK: 
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+
+@MITASK */
+
+function getHighestIndex(arr) {
+  let maxIndex = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > arr[maxIndex]) {
+      maxIndex = i;
+    }
+  }
+  return maxIndex;
+}
+
+// Misol:
+console.log(getHighestIndex([70, 80, 101, 1111, 999]));
+
 /*
 F-TASK: 
 
@@ -6,6 +26,7 @@ MASALAN: getReverse("hello") return true return qiladi
 
 @MITASK
 */
+/*
 function findDoublers(s) {
   // Belgilarni saqlash uchun to'plam yaratamiz
   const seen = new Set();
@@ -28,7 +49,7 @@ function findDoublers(s) {
 console.log(findDoublers("hello")); // true qaytaradi
 console.log(findDoublers("abcde")); // false qaytaradi
 console.log(findDoublers("aabbcc")); // true qaytaradi
-
+*/
 /*E-TASK: 
 
 Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
